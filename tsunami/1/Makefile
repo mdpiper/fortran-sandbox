@@ -2,7 +2,7 @@ FC = gfortran
 CFLAGS = -c -std=f2003
 LFLAGS =
 
-all: tsunami
+all: tsunami run
 
 tsunami:
 %: %.o
@@ -11,5 +11,8 @@ tsunami:
 %.o: %.f90
 	${FC} ${CFLAGS} $<
 
+run: tsunami
+	./$< > $<.out
+
 clean:
-	rm -rf *~ *.o *.so *.mod tsunami
+	rm -rf *~ *.o *.so *.mod tsunami tsunami.out
