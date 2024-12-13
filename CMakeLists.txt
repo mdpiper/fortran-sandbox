@@ -13,6 +13,9 @@ list(GET VERSION_LIST 1 PROJECT_VERSION_MINOR)
 list(GET VERSION_LIST 2 PROJECT_VERSION_PATCH)
 unset(VERSION_LIST)
 
+message("Project: " ${CMAKE_PROJECT_NAME})
+message("Version: " ${PROJECT_VERSION})
+
 # Follow GNU conventions for installation directories
 include(GNUInstallDirs)
 
