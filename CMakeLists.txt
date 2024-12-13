@@ -16,3 +16,4 @@ unset(VERSION_LIST)
 # Follow GNU conventions for installation directories
 include(GNUInstallDirs)
 
+add_subdirectory(strings)
