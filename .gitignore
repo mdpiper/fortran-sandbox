@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+# My typical build and local install directories (MP)
+_build
+_install
