@@ -1,0 +1,13 @@
+# Set up a sandbox for building Fortran examples.
+name: fbox
+channels:
+  - conda-forge
+dependencies:
+  - python =3
+  - make
+  - cmake
+  - ninja
+  - pkg-config
+  - fortran-compiler
+  # - cxx-compiler  # [win]
+  # - vs2019_win-64  # [win]
